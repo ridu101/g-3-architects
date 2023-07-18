@@ -23,7 +23,14 @@ nav li {
 
 nav li a {
        text-decoration: none;
-       color: blueviolet;
+       color: rgb(130, 35, 219);
+       text-align: center;
+       font-family: Work Sans;
+       font-size: 18px;
+       font-style: normal;
+       font-weight: 500;
+       line-height: 26px;
+
 }
 
 .nav-title {
@@ -45,7 +52,7 @@ nav li a {
        width: 100%;
        margin-top: 20px;
 }
-      
+
 
 .bannar-title {
        color: var(--dark-01, #131313);
@@ -59,7 +66,7 @@ nav li a {
 
 .btn-primary {
        color: #FFF;
-       text-align: center;
+
        font-family: Work Sans;
        font-size: 20px;
        font-style: normal;
@@ -83,22 +90,106 @@ nav li a {
        width: 100%;
 }
 
+/*main tg styles*/
+main {
+       max-width: 1440px;
+       margin: 20px auto;
+}
+
+.teams-container {
+       display: flex;
+       align-items: center;
+
+}
+
+.team-img {
+       display: grid;
+       grid-template-columns: repeat(2, 1fr);
+       gap: 20px;
+}
+
+.tems-content {
+       justify-content: center;
+       text-align: center;
+       margin-left: auto;
+       margin-right: auto;
+}
+
+.quick {
+       color: var(--dark-03, #727272);
+       font-family: Work Sans;
+       font-size: 45px;
+       font-style: normal;
+       font-weight: 500;
+       line-height: normal;
+
+}
+
+.feature {
+       color: #FF900E;
+       font-family: Work Sans;
+       font-size: 45px;
+       font-style: normal;
+       font-weight: 700;
+       line-height: normal;
+}
+
+.of {
+       color: var(--dark-01, #131313);
+       font-family: Work Sans;
+       font-size: 45px;
+       font-style: normal;
+       font-weight: 700;
+       line-height: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*responsive center*/
+/*small device*/
+
 @media screen and (max-width:576px) {
-       header{
+       header {
               padding: 20px;
        }
-       nav{
-              flex-direction: column;
-       }
-       .bannar-discription{
+
+       nav,
+       .teams-container {
               flex-direction: column;
        }
 
-       
+       .bannar-discription {
+              flex-direction: column;
+       }
+       .team-img{
+              grid-template-columns: 1fr;
+       }
+
+
 }
+/*mediam device*/
+
 @media screen and (min-width:576px) and (max-width:992px) {
-      nav{
-       flex-direction: column;
-      } 
+       nav,
+       .teams-container {
+              flex-direction: column;
+       }
 }
